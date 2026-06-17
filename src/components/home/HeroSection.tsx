@@ -54,7 +54,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <span className="inline-block px-5 py-2 bg-primary/15 backdrop-blur-sm border border-primary/20 rounded-full text-primary text-sm font-medium tracking-widest uppercase mb-8">
-                ✨ Taste of the Legacy Tradition
+                 Taste of the Legacy Tradition
               </span>
             </motion.div>
 
@@ -112,8 +112,8 @@ export default function HeroSection() {
               className="mt-12 flex items-center justify-center lg:justify-start gap-10"
             >
               {[
-                { value: '100+', label: 'Produk' },
-                { value: '500+', label: 'Pelanggan' },
+                { value: '50+', label: 'Produk' },
+                { value: '100+', label: 'Pelanggan' },
                 { value: '4.9★', label: 'Rating' },
               ].map((stat, i) => (
                 <div key={stat.label} className={`text-center ${i > 0 ? 'border-l border-white/10 pl-10' : ''}`}>
@@ -151,13 +151,7 @@ export default function HeroSection() {
                     priority={index < 2}
                   />
                   {/* Subtle overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                  {/* Product name label */}
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <span className="inline-block px-3 py-1 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-medium rounded-full">
-                      {product.alt}
-                    </span>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
                 </motion.div>
               ))}
             </div>

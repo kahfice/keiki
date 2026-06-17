@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, ShoppingCart } from 'lucide-react';
 import InstagramIcon from '@/components/ui/InstagramIcon';
 import { BRAND, LINKS, NAV_ITEMS } from '@/lib/constants';
 
@@ -121,9 +121,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Tokopedia"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                </svg>
+                <ShoppingCart size={18} />
               </a>
             </div>
             <div className="mt-6">
