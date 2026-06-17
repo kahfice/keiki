@@ -7,6 +7,7 @@ import AboutPreview from '@/components/home/AboutPreview';
 import InstagramShowcase from '@/components/home/InstagramShowcase';
 import Testimonials from '@/components/home/Testimonials';
 import OrderCTA from '@/components/home/OrderCTA';
+import { Analytics } from '@vercel/analytics/next';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <OrderCTA />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
